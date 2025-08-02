@@ -401,8 +401,8 @@ async function handleTariffSubmit(e) {
 
 async function sendToTelegram(data) {
   // Replace with your actual Telegram Bot Token and Chat ID
-  const BOT_TOKEN = "YOUR_BOT_TOKEN";
-  const CHAT_ID = "YOUR_CHAT_ID";
+  const BOT_TOKEN = "7995174943:AAHbQgQPz8XkBkbJyKwqBotyC7lJkh8mkTg";
+  const CHAT_ID = "https://core.telegram.org/bots/api";
 
   const message = `
 🎓 Нова заявка на WIZA!
