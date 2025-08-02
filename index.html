@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WIZA - Опануй професію візового експерта</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Перша в Україні комплексна програма навчання візових експертів. Заробляй від $2000/місяць, працюючи онлайн з будь-якої точки світу.">
+    <meta name="keywords" content="візовий експерт, навчання, віза США, віза Канада, віза Британія, онлайн робота">
+    <meta name="author" content="myWiza">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="WIZA - Опануй професію візового експерта">
+    <meta property="og:description"
+        content="Авторська програма навчання по оформленню віз до США, Канади та Британії з нуля">
+    <meta property="og:image" content="images/og-image.jpg">
+    <meta property="og:url" content="https://wiza.mywiza.com.ua">
+    <meta property="og:type" content="website">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="nav-logo">
+                    <img src="images/logo.svg" alt="WIZA" class="logo">
+                </div>
+                <div class="nav-links">
+                    <a href="#about" class="nav-link">Про програму</a>
+                    <a href="#program" class="nav-link">Програма</a>
+                    <a href="#pricing" class="nav-link">Тарифи</a>
+                    <a href="#reviews" class="nav-link">Відгуки</a>
+                </div>
+                <button class="nav-toggle" aria-label="Відкрити меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <picture>
+                <source media="(max-width: 767px)" srcset="images/hero-bg-mobile.jpg">
+                <source media="(min-width: 768px)" srcset="images/hero-bg-desktop.jpg">
+                <img src="images/hero-bg-desktop.jpg" alt="Візовий експерт" class="hero-image">
+            </picture>
+            <div class="hero-overlay"></div>
+        </div>
+
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text" data-aos="fade-up" data-aos-delay="200">
+                    <h1 class="hero-title">
+                        Опануй онлайн-професію <span class="text-accent">візового експерта</span> та заробляй від <span
+                            class="text-gold">$2000/місяць</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Авторська програма WIZA — перше в Україні повноцінне навчання по оформленню віз до США, Канади
+                        та Британії з нуля.
+                    </p>
+                    <div class="hero-cta">
+                        <button class="btn btn-primary btn-lg" onclick="scrollToSection('#pricing')">
+                            <i class="fas fa-rocket"></i>
+                            Обрати тариф
+                        </button>
+                        <button class="btn btn-outline btn-lg" onclick="playVideo()">
+                            <i class="fas fa-play"></i>
+                            Дивитися відео
+                        </button>
+                    </div>
+                </div>
+
+                <div class="hero-stats" data-aos="fade-up" data-aos-delay="400">
+                    <div class="stat-item">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Успішних віз</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">3</div>
+                        <div class="stat-label">Країни</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">$2000+</div>
+                        <div class="stat-label">Дохід/місяць</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Video Modal Placeholder -->
+        <div class="video-container" id="videoContainer" style="display: none;">
+            <div class="video-overlay" onclick="closeVideo()"></div>
+            <div class="video-content">
+                <button class="video-close" onclick="closeVideo()">
+                    <i class="fas fa-times"></i>
+                </button>
+                <div id="videoPlayer"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About WIZA Section -->
+    <section class="about-wiza section-padding" id="about">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">WIZA — це не просто курс. Це старт твоєї нової справи.</h2>
+                <p class="section-subtitle">
+                    Це перша в Україні комплексна програма, яка навчає тебе оформлювати туристичні візи до США, Канади
+                    та Британії професійно, впевнено і з результатом.
+                </p>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right">
+                    <p>Ти отримаєш готову систему, яка дозволить заробляти онлайн, працюючи з будь-якої точки світу.</p>
+
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <i class="fas fa-globe-americas"></i>
+                            <span>3 країни: США, Канада, Британія</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-laptop"></i>
+                            <span>Повністю онлайн формат</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-certificate"></i>
+                            <span>Сертифікат після завершення</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-users"></i>
+                            <span>Підтримка спільноти</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-visual" data-aos="fade-left">
+                    <div class="visual-card">
+                        <img src="images/about-visual.jpg" alt="Процес навчання" class="visual-image">
+                        <div class="visual-overlay">
+                            <div class="visual-stats">
+                                <div class="visual-stat">
+                                    <span class="number">8</span>
+                                    <span class="label">Модулів</span>
+                                </div>
+                                <div class="visual-stat">
+                                    <span class="number">24/7</span>
+                                    <span class="label">Підтримка</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Target Audience Section -->
+    <section class="target-audience section-padding bg-light">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Ця програма — для тебе, якщо ти:</h2>
+            </div>
+
+            <div class="target-grid">
+                <div class="target-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="target-icon">
+                        <i class="fas fa-laptop-house"></i>
+                    </div>
+                    <h3>Хочеш заробляти онлайн</h3>
+                    <p>та не залежати від країни проживання</p>
+                </div>
+
+                <div class="target-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="target-icon">
+                        <i class="fas fa-baby"></i>
+                    </div>
+                    <h3>В декреті</h3>
+                    <p>або в пошуку нової професії</p>
+                </div>
+
+                <div class="target-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="target-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Вже працюєш у візовій темі</h3>
+                    <p>але хочеш системність і стабільність</p>
+                </div>
+
+                <div class="target-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="target-icon">
+                        <i class="fas fa-plane"></i>
+                    </div>
+                    <h3>Переїхала за кордон</h3>
+                    <p>і шукаєш роботу на себе</p>
+                </div>
+
+                <div class="target-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="target-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Бажаєш допомагати людям</h3>
+                    <p>з подорожами, переїздами, мріями</p>
+                </div>
+
+                <div class="target-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="target-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Хочеш мати дохід</h3>
+                    <p>який залежить тільки від тебе</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Section -->
+    <section class="why-choose section-padding">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Професія, яка буде потрібна завжди</h2>
+            </div>
+
+            <div class="why-content">
+                <div class="why-list">
+                    <div class="why-item" data-aos="fade-right" data-aos-delay="100">
+                        <div class="why-icon">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <div class="why-text">
+                            <h4>Попит постійно зростає</h4>
+                            <p>відкриті візи, подорожі, релокація</p>
+                        </div>
+                    </div>
+
+                    <div class="why-item" data-aos="fade-right" data-aos-delay="200">
+                        <div class="why-icon">
+                            <i class="fas fa-laptop"></i>
+                        </div>
+                        <div class="why-text">
+                            <h4>Можна працювати з дому</h4>
+                            <p>чи з будь-якої країни</p>
+                        </div>
+                    </div>
+
+                    <div class="why-item" data-aos="fade-right" data-aos-delay="300">
+                        <div class="why-icon">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <div class="why-text">
+                            <h4>Стабільний дохід $2000+</h4>
+                            <p>вже після перших клієнтів</p>
+                        </div>
+                    </div>
+
+                    <div class="why-item" data-aos="fade-right" data-aos-delay="400">
+                        <div class="why-icon">
+                            <i class="fas fa-spa"></i>
+                        </div>
+                        <div class="why-text">
+                            <h4>Без стресу</h4>
+                            <p>без менеджерів, без «потрібно в офіс»</p>
+                        </div>
+                    </div>
+
+                    <div class="why-item" data-aos="fade-right" data-aos-delay="500">
+                        <div class="why-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="why-text">
+                            <h4>Повна свобода</h4>
+                            <p>і можливість будувати свою справу</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="why-visual" data-aos="fade-left">
+                    <div class="visual-wrapper">
+                        <img src="images/why-choose-bg.jpg" alt="Свобода роботи" class="why-image">
+                        <div class="floating-elements">
+                            <div class="floating-card card-1">
+                                <i class="fas fa-dollar-sign"></i>
+                                <span>$2000+</span>
+                            </div>
+                            <div class="floating-card card-2">
+                                <i class="fas fa-clock"></i>
+                                <span>24/7</span>
+                            </div>
+                            <div class="floating-card card-3">
+                                <i class="fas fa-globe"></i>
+                                <span>Онлайн</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learning Process Section -->
+    <section class="learning-process section-padding bg-light">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Все, що тобі потрібно — вже всередині WIZA</h2>
+            </div>
+
+            <div class="process-grid">
+                <div class="process-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="process-icon">
+                        <i class="fas fa-play-circle"></i>
+                    </div>
+                    <h4>Відеоуроки</h4>
+                    <p>які відкриваються поступово</p>
+                </div>
+
+                <div class="process-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="process-icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <h4>Платформа</h4>
+                    <p>з доступом на 3, 6 місяців або назавжди</p>
+                </div>
+
+                <div class="process-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="process-icon">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <h4>Домашні завдання</h4>
+                    <p>перевірка, підтримка</p>
+                </div>
+
+                <div class="process-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="process-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h4>Зідзвони з Мартою</h4>
+                    <p>авторкою програми</p>
+                </div>
+
+                <div class="process-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="process-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h4>Чати з кураторами</h4>
+                    <p>і середовище однодумців</p>
+                </div>
+
+                <div class="process-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="process-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h4>Шанс потрапити в команду</h4>
+                    <p>myWiza після навчання</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Program Structure Section -->
+    <section class="program-structure section-padding" id="program">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">8 модулів, які дадуть повну систему:</h2>
+            </div>
+
+            <div class="program-accordion" data-aos="fade-up" data-aos-delay="200">
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <button class="accordion-button" type="button">
+                            <span class="module-number">1</span>
+                            <span class="module-title">Типи віз до США, Канади, Британії</span>
+                        </button>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Як обрати та що знати про різні типи віз, особливості кожної країни</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <button class="accordion-button" type="button">
+                            <span class="module-number">2</span>
+                            <span class="module-title">Збір і перевірка документів</span>
+                        </button>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Анкети, супровідні листи, всі необхідні документи та їх правильне оформлення</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <button class="accordion-button" type="button">
+                            <span class="module-number">3</span>
+                            <span class="module-title">Покрокове оформлення заявок</span>
+                        </button>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Детальний процес подачі документів, роботи з консульствами та відстеження статусу</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <button class="accordion-button" type="button">
+                            <span class="module-number">4</span>
+                            <span class="module-title">Робота з клієнтом</span>
+                        </button>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Як вести, не "горіти", відповідати професійно та будувати довгострокові відносини</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <button class="accordion-button" type="button">
+                            <span class="module-number">5</span>
+                            <span class="module-title">Продаж візових послуг</span>
+                        </button>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Психологія вартості, ціноутворення та ефективні техніки продажу</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <button class="accordion-button" type="button">
+                            <span class="module-number">6</span>
+                            <span class="module-title">Особистий бренд</span>
+                        </button>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Залучення клієнтів через Instagram, побудова репутації та довіри</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <button class="accordion-button" type="button">
+                            <span class="module-number">7</span>
+                            <span class="module-title">Автоматизація бізнес-процесів</span>
+                        </button>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Інструменти та системи для ефективного ведення бізнесу</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <button class="accordion-button" type="button">
+                            <span class="module-number">8</span>
+                            <span class="module-title">Масштабування</span>
+                        </button>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Як вийти з "фрілансу" в агентство, найм співробітників, розширення послуг</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing section-padding bg-gradient" id="pricing">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title text-white">Обери свій рівень участі:</h2>
+            </div>
+
+            <div class="pricing-grid">
+                <!-- Start Plan -->
+                <div class="pricing-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="pricing-header">
+                        <h3>Start</h3>
+                        <p class="pricing-subtitle">Для тих, хто хоче зрозуміти тему та спробувати</p>
+                    </div>
+
+                    <div class="pricing-price">
+                        <span class="currency">$</span>
+                        <span class="amount">50</span>
+                        <div class="price-old">$70</div>
+                    </div>
+
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> 1 модуль на вибір: США / Канада / Британія</li>
+                        <li><i class="fas fa-check"></i> Платформа: доступ 3 місяці</li>
+                        <li><i class="fas fa-times"></i> Перевірка завдань</li>
+                        <li><i class="fas fa-times"></i> Чат з кураторами</li>
+                        <li><i class="fas fa-times"></i> Сертифікат</li>
+                    </ul>
+
+                    <button class="btn btn-outline-primary btn-block" onclick="openModal('start')">
+                        Обрати тариф
+                    </button>
+                </div>
+
+                <!-- Build Plan -->
+                <div class="pricing-card recommended" data-aos="fade-up" data-aos-delay="200">
+                    <div class="recommended-badge">Рекомендований</div>
+                    <div class="pricing-header">
+                        <h3>Build</h3>
+                        <p class="pricing-subtitle">Для тих, хто хоче заробляти на візах онлайн</p>
+                    </div>
+
+                    <div class="pricing-price">
+                        <span class="currency">$</span>
+                        <span class="amount">490</span>
+                        <div class="price-old">$790</div>
+                    </div>
+
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> 8 модулів</li>
+                        <li><i class="fas fa-check"></i> Платформа: доступ 6 місяців</li>
+                        <li><i class="fas fa-check"></i> Перевірка завдань</li>
+                        <li><i class="fas fa-check"></i> Чат з кураторами</li>
+                        <li><i class="fas fa-check"></i> Допомога з веденням першого клієнта</li>
+                        <li><i class="fas fa-check"></i> Сертифікат</li>
+                        <li><i class="fas fa-check"></i> Можливість потрапити в команду</li>
+                    </ul>
+
+                    <button class="btn btn-primary btn-block" onclick="openModal('build')">
+                        Обрати тариф
+                    </button>
+                </div>
+
+                <!-- Pro Plan -->
+                <div class="pricing-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="pricing-header">
+                        <h3>Pro</h3>
+                        <p class="pricing-subtitle">Для тих, хто хоче стабільно закривати клієнтів</p>
+                    </div>
+
+                    <div class="pricing-price">
+                        <span class="currency">$</span>
+                        <span class="amount">790</span>
+                        <div class="price-old">$1190</div>
+                    </div>
+
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> 8 модулів</li>
+                        <li><i class="fas fa-check"></i> Платформа: доступ назавжди</li>
+                        <li><i class="fas fa-check"></i> Зідзвони з Мартою</li>
+                        <li><i class="fas fa-check"></i> Повна підтримка куратора</li>
+                        <li><i class="fas fa-check"></i> Доведення до результату — перший клієнт</li>
+                        <li><i class="fas fa-check"></i> Сертифікат</li>
+                        <li><i class="fas fa-check"></i> Можливість потрапити в команду</li>
+                    </ul>
+
+                    <button class="btn btn-outline-primary btn-block" onclick="openModal('pro')">
+                        Обрати тариф
+                    </button>
+                </div>
+
+                <!-- Business Plan -->
+                <div class="pricing-card premium" data-aos="fade-up" data-aos-delay="400">
+                    <div class="pricing-header">
+                        <h3>Business</h3>
+                        <p class="pricing-subtitle">Для тих, хто хоче повноцінний бізнес під ключ</p>
+                    </div>
+
+                    <div class="pricing-price">
+                        <span class="currency">$</span>
+                        <span class="amount">1990</span>
+                        <div class="price-old">$2590</div>
+                    </div>
+
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> 8 модулів</li>
+                        <li><i class="fas fa-check"></i> Платформа: доступ назавжди</li>
+                        <li><i class="fas fa-check"></i> 2 зідзвони з Мартою на тиждень</li>
+                        <li><i class="fas fa-check"></i> Особистий чат з Мартою</li>
+                        <li><i class="fas fa-check"></i> Допомога в побудові всіх процесів</li>
+                        <li><i class="fas fa-check"></i> Готовий бізнес</li>
+                        <li><i class="fas fa-check"></i> Стратегія масштабування на 1 рік</li>
+                    </ul>
+
+                    <button class="btn btn-gold btn-block" onclick="openModal('business')">
+                        Обрати тариф
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews section-padding" id="reviews">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Про нас говорять самі клієнти 👇</h2>
+            </div>
+
+            <div class="reviews-grid" id="reviewsContainer">
+                <!-- Reviews will be loaded here via JavaScript -->
+                <div class="review-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="review-content">
+                        <div class="review-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="review-text">
+                            "Я ще не на навчанні, але вже кілька разів зверталась до Марти — все чітко, професійно. Саме
+                            тому довіряю і йду в перший потік."
+                        </p>
+                    </div>
+                    <div class="review-author">
+                        <img src="images/review-1.jpg" alt="Ольга" class="author-avatar">
+                        <div class="author-info">
+                            <div class="author-name">Ольга</div>
+                            <div class="author-location">Чехія</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="review-content">
+                        <div class="review-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="review-text">
+                            "Я оформлював візу до Канади з myWiza — процес був настільки простий і зрозумілий, що коли
+                            дізнався про навчання, відразу записався."
+                        </p>
+                    </div>
+                    <div class="review-author">
+                        <img src="images/review-2.jpg" alt="Максим" class="author-avatar">
+                        <div class="author-info">
+                            <div class="author-name">Максим</div>
+                            <div class="author-location">Польща</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="review-content">
+                        <div class="review-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="review-text">
+                            "Марта — людина, яка реально вболіває за результат. Якщо таке ж буде в навчанні, воно точно
+                            варте кожної гривні."
+                        </p>
+                    </div>
+                    <div class="review-author">
+                        <img src="images/review-3.jpg" alt="Ірина" class="author-avatar">
+                        <div class="author-info">
+                            <div class="author-name">Ірина</div>
+                            <div class="author-location">Німеччина</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reviews-cta" data-aos="fade-up" data-aos-delay="400">
+                <button class="btn btn-outline-primary" id="loadMoreReviews">
+                    <i class="fas fa-plus"></i>
+                    Завантажити більше відгуків
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Exclusivity Section -->
+    <section class="exclusivity section-padding bg-light">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Такої програми в Україні ще не було. І от чому:</h2>
+            </div>
+
+            <div class="exclusivity-grid">
+                <div class="exclusivity-item" data-aos="fade-right" data-aos-delay="100">
+                    <div class="exclusivity-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="exclusivity-content">
+                        <h4>Не "швидкі гіди"</h4>
+                        <p>це системне навчання з нуля</p>
+                    </div>
+                </div>
+
+                <div class="exclusivity-item" data-aos="fade-right" data-aos-delay="200">
+                    <div class="exclusivity-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <div class="exclusivity-content">
+                        <h4>Автор — практик</h4>
+                        <p>який веде агентство myWiza</p>
+                    </div>
+                </div>
+
+                <div class="exclusivity-item" data-aos="fade-right" data-aos-delay="300">
+                    <div class="exclusivity-icon">
+                        <i class="fas fa-globe-americas"></i>
+                    </div>
+                    <div class="exclusivity-content">
+                        <h4>3 країни одразу</h4>
+                        <p>немає схожих програм з візами по США, Канаді та Британії</p>
+                    </div>
+                </div>
+
+                <div class="exclusivity-item" data-aos="fade-left" data-aos-delay="400">
+                    <div class="exclusivity-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <div class="exclusivity-content">
+                        <h4>Жива підтримка</h4>
+                        <p>всі консультації — живими людьми, не ботами</p>
+                    </div>
+                </div>
+
+                <div class="exclusivity-item" data-aos="fade-left" data-aos-delay="500">
+                    <div class="exclusivity-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <div class="exclusivity-content">
+                        <h4>Фокус на дохід</h4>
+                        <p>а не "знання заради знань"</p>
+                    </div>
+                </div>
+
+                <div class="exclusivity-item" data-aos="fade-left" data-aos-delay="600">
+                    <div class="exclusivity-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="exclusivity-content">
+                        <h4>Потенційний член команди</h4>
+                        <p>кожен учасник може приєднатися до myWiza</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq section-padding">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Часті запитання</h2>
+            </div>
+
+            <div class="faq-container" data-aos="fade-up" data-aos-delay="200">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <button class="faq-button" type="button">
+                            <span>Чи можу я пройти курс, якщо ніколи не займалась візами?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Так, курс створено з нуля — всі процеси пояснюються детально. Ви отримаєте покрокові
+                            інструкції та підтримку на кожному етапі.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <button class="faq-button" type="button">
+                            <span>А якщо я вже оформлюю візи?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="faq-answer">
+                        <p>WIZA допоможе структурувати процеси, підвищити ціни та збільшити потік клієнтів. Ви
+                            дізнаєтесь про нові методи та інструменти.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <button class="faq-button" type="button">
+                            <span>Скільки часу потрібно на навчання?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="faq-answer">
+                        <p>В середньому — 4–6 годин на тиждень. Можна поєднувати з роботою чи навчанням. Навчання
+                            проходить у зручному для вас темпі.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <button class="faq-button" type="button">
+                            <span>Як довго буде доступ до матеріалів?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Залежить від тарифу — 3, 6 місяців або назавжди. На тарифах Pro та Business доступ назавжди з
+                            усіма оновленнями.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <button class="faq-button" type="button">
+                            <span>Як проходить підтримка?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                    <div class="faq-answer">
+                        <p>У чатах з кураторами та на Zoom-зідзвонах з Мартою (на тарифах Build+). Відповіді протягом 24
+                            годин у робочі дні.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="final-cta section-padding bg-gradient">
+        <div class="container">
+            <div class="cta-content" data-aos="fade-up">
+                <h2 class="cta-title">Старт першого потоку — вже скоро. Встигни потрапити!</h2>
+                <p class="cta-subtitle">
+                    Це не ще один курс. Це професія, яка може змінити твоє життя.<br>
+                    Вибери свій тариф, і приєднуйся до першого ексклюзивного потоку програми WIZA.
+                </p>
+
+                <div class="cta-timer" id="countdownTimer">
+                    <div class="timer-item">
+                        <span class="timer-number" id="days">00</span>
+                        <span class="timer-label">днів</span>
+                    </div>
+                    <div class="timer-item">
+                        <span class="timer-number" id="hours">00</span>
+                        <span class="timer-label">годин</span>
+                    </div>
+                    <div class="timer-item">
+                        <span class="timer-number" id="minutes">00</span>
+                        <span class="timer-label">хвилин</span>
+                    </div>
+                    <div class="timer-item">
+                        <span class="timer-number" id="seconds">00</span>
+                        <span class="timer-label">секунд</span>
+                    </div>
+                </div>
+
+                <button class="btn btn-white btn-lg cta-button" onclick="scrollToSection('#pricing')">
+                    <i class="fas fa-rocket"></i>
+                    Обрати тариф та приєднатися
+                </button>
+
+                <p class="cta-note">Місць обмежено. Старт найближчого потоку — 15 вересня 2024</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <div class="footer-logo">
+                        <img src="images/logo-white.svg" alt="WIZA" class="logo">
+                        <p class="footer-tagline">Перша в Україні програма навчання візових експертів</p>
+                    </div>
+
+                    <div class="footer-links">
+                        <div class="footer-column">
+                            <h4>Навчання</h4>
+                            <ul>
+                                <li><a href="#about">Про програму</a></li>
+                                <li><a href="#program">Програма</a></li>
+                                <li><a href="#pricing">Тарифи</a></li>
+                                <li><a href="#reviews">Відгуки</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-column">
+                            <h4>Компанія</h4>
+                            <ul>
+                                <li><a href="https://mywiza.com.ua" target="_blank">myWiza</a></li>
+                                <li><a href="#contact">Контакти</a></li>
+                                <li><a href="#privacy">Політика конфіденційності</a></li>
+                                <li><a href="#terms">Умови використання</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-column">
+                            <h4>Контакти</h4>
+                            <ul>
+                                <li><a href="mailto:info@mywiza.com.ua">info@mywiza.com.ua</a></li>
+                                <li><a href="tel:+380123456789">+38 (012) 345-67-89</a></li>
+                                <li><a href="https://t.me/mywiza" target="_blank">Telegram</a></li>
+                                <li><a href="https://instagram.com/mywiza" target="_blank">Instagram</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p>&copy; 2024 WIZA by myWiza. Всі права захищені.</p>
+                    <div class="footer-social">
+                        <a href="https://instagram.com/mywiza" target="_blank" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://t.me/mywiza" target="_blank" class="social-link">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="https://facebook.com/mywiza" target="_blank" class="social-link">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://linkedin.com/company/mywiza" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal for Tariff Selection -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modalTitle">Обрати тариф</h3>
+                <button class="modal-close" onclick="closeModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+
+            <div class="modal-body">
+                <form id="tariffForm" class="tariff-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">Ім'я *</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Прізвище *</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Телефон *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="country">Країна проживання</label>
+                        <select id="country" name="country">
+                            <option value="">Оберіть країну</option>
+                            <option value="ukraine">Україна</option>
+                            <option value="poland">Польща</option>
+                            <option value="germany">Німеччина</option>
+                            <option value="czech">Чехія</option>
+                            <option value="other">Інша</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="experience">Досвід роботи з візами</label>
+                        <select id="experience" name="experience">
+                            <option value="">Оберіть варіант</option>
+                            <option value="none">Немає досвіду</option>
+                            <option value="beginner">Початківець (до 1 року)</option>
+                            <option value="intermediate">Середній (1-3 роки)</option>
+                            <option value="advanced">Досвідчений (3+ роки)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="motivation">Що мотивує вас вивчати цю професію?</label>
+                        <textarea id="motivation" name="motivation" rows="3"
+                            placeholder="Розкажіть коротко про свої цілі..."></textarea>
+                    </div>
+
+                    <input type="hidden" id="selectedTariff" name="selectedTariff" value="">
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <i class="fas fa-paper-plane"></i>
+                            Надіслати заявку
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Progress Indicator -->
+    <div class="progress-indicator" id="progressIndicator"></div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
